@@ -41,3 +41,7 @@ yarn-error.log
 # System Files
 .DS_Store
 Thumbs.db
+exercise.json
+results/karma-results.json
+results/protractor-results.json
+results/tslint-results.json
