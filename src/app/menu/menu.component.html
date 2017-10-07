@@ -2,10 +2,10 @@
     <button (click)="toggleNavbar()" type="button" class="navbar-toggler navbar-toggler-right">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand">PonyRacer</a>
+    <a class="navbar-brand" routerLink="">PonyRacer</a>
     <div id="navbar" [class.collapse]="navbarCollapsed" >
       <div class="nav navbar-nav mr-auto">
-        <a class="nav-item nav-link">Races</a>
+        <a class="nav-item nav-link" routerLink="races">Races</a>
       </div>
     </div>
   </nav>
