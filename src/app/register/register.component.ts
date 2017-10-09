@@ -13,7 +13,7 @@ export class RegisterComponent implements OnInit {
   birthYearCtrl: FormControl;
 
   constructor(fb: FormBuilder) {
-    this.loginCtrl = fb.control('', Validators.required);
+    this.loginCtrl = fb.control('', [Validators.required, Validators.minLength(3)]);
     this.passwordCtrl = fb.control('', Validators.required);
     this.birthYearCtrl = fb.control('', Validators.required);
     this.userForm = fb.group({
